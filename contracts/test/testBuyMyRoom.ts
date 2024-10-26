@@ -16,10 +16,10 @@ describe("Test", function () {
     return { buyMyRoom, owner, otherAccount };
   }
 
-  describe("Deployment", function () {
-    it("Should return hello world", async function () {
+  describe("TsetBuyMyRoom", function () {
+    it("Should output hello world", async function () {
       const { buyMyRoom } = await loadFixture(deployFixture);
-      expect(await buyMyRoom.helloworld()).to.equal("hello world");
+      expect(await buyMyRoom.buyHouseWithTokens(2)).to.equal("hello world");
     });
   });
 });
