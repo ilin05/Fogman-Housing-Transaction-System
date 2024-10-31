@@ -22,7 +22,7 @@
 
 4. 在 `./contracts` 中部署合约，运行如下的命令：
     ```bash
-    npx hardhat run scripts/deploy.js --network localhost
+    npx hardhat run scripts/deploy.ts --network localhost
     ```
 
 5. 将部署得到的 `BuyMyRoom` 和 `ERC20` 的地址修改到前端 `src/utils/contract-address.json` 文件中
